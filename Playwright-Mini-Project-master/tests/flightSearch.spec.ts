@@ -4,7 +4,7 @@ import { HomePage } from '../pages/HomePage';
 import { SearchResultsPage } from '../pages/SearchResultsPage';
 import { formatDate } from '../utils/dateUtils';
 
-test.only("Flight Search", async ({ browser }) => {
+test("Flight Search", async ({ browser }) => {
   const context = await browser.newContext();
   const page = await context.newPage();
 
